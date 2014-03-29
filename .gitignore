@@ -1,0 +1,13 @@
+[bB]in/
+obj/
+[dD]ebug/
+[rR]elease/
+*.user
+*.cache
+*.log*
+*log.txt*
+*.suo
+_Re[sS]harper.*/
+*.[Rr]e[Ss]harper
+/*/bin/
+/*/debug/
