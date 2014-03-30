@@ -274,77 +274,77 @@ namespace SwissEphemerisWrapperTest
             swe_set_sid_mode(SiderealFlag.Lahiri, 0, 0);
             swe_houses_ex(someJulianDayNumber, EphemerisModes.Sidereal, 20, 78, 'E', cusps, ascendantAndOthers);
             Console.WriteLine(ascendantAndOthers[0]);
-            Console.WriteLine(cusps[1]);
-            Console.WriteLine(cusps[2]);
+//            Console.WriteLine(cusps[1]);
+//            Console.WriteLine(cusps[2]);
 
             swe_houses_ex(someJulianDayNumber, EphemerisModes.Sidereal, 20, 78, 'P', cusps, ascendantAndOthers);
             Console.WriteLine(ascendantAndOthers[0]);
-            Console.WriteLine(cusps[1]);
-            Console.WriteLine(cusps[2]);
+//            Console.WriteLine(cusps[1]);
+//            Console.WriteLine(cusps[2]);
 
 
             swe_houses_ex(someJulianDayNumber, EphemerisModes.Sidereal, 20, 78, 'K', cusps, ascendantAndOthers);
             Console.WriteLine(ascendantAndOthers[0]);
-            Console.WriteLine(cusps[1]);
-            Console.WriteLine(cusps[2]);
+//            Console.WriteLine(cusps[1]);
+//            Console.WriteLine(cusps[2]);
 
 
             swe_houses_ex(someJulianDayNumber, EphemerisModes.Sidereal, 20, 78, 'O', cusps, ascendantAndOthers);
             Console.WriteLine(ascendantAndOthers[0]);
-            Console.WriteLine(cusps[1]);
-            Console.WriteLine(cusps[2]);
+//            Console.WriteLine(cusps[1]);
+//            Console.WriteLine(cusps[2]);
 
 
             swe_houses_ex(someJulianDayNumber, EphemerisModes.Sidereal, 20, 78, 'R', cusps, ascendantAndOthers);
             Console.WriteLine(ascendantAndOthers[0]);
-            Console.WriteLine(cusps[1]);
-            Console.WriteLine(cusps[2]);
+//            Console.WriteLine(cusps[1]);
+//            Console.WriteLine(cusps[2]);
 
 
             swe_houses_ex(someJulianDayNumber, EphemerisModes.Sidereal, 20, 78, 'C', cusps, ascendantAndOthers);
             Console.WriteLine(ascendantAndOthers[0]);
-            Console.WriteLine(cusps[1]);
-            Console.WriteLine(cusps[2]);
+//            Console.WriteLine(cusps[1]);
+//            Console.WriteLine(cusps[2]);
 
             
             swe_houses_ex(someJulianDayNumber, EphemerisModes.Sidereal, 20, 78, 'V', cusps, ascendantAndOthers);
             Console.WriteLine(ascendantAndOthers[0]);
-            Console.WriteLine(cusps[1]);
-            Console.WriteLine(cusps[2]);
+//            Console.WriteLine(cusps[1]);
+//            Console.WriteLine(cusps[2]);
 
             
             swe_houses_ex(someJulianDayNumber, EphemerisModes.Sidereal, 20, 78, 'X', cusps, ascendantAndOthers);
             Console.WriteLine(ascendantAndOthers[0]);
-            Console.WriteLine(cusps[1]);
-            Console.WriteLine(cusps[2]);
+//            Console.WriteLine(cusps[1]);
+//            Console.WriteLine(cusps[2]);
 
             
             swe_houses_ex(someJulianDayNumber, EphemerisModes.Sidereal, 20, 78, 'H', cusps, ascendantAndOthers);
             Console.WriteLine(ascendantAndOthers[0]);
-            Console.WriteLine(cusps[1]);
-            Console.WriteLine(cusps[2]);
+//            Console.WriteLine(cusps[1]);
+//            Console.WriteLine(cusps[2]);
 
             
             swe_houses_ex(someJulianDayNumber, EphemerisModes.Sidereal, 20, 78, 'T', cusps, ascendantAndOthers);
             Console.WriteLine(ascendantAndOthers[0]);
-            Console.WriteLine(cusps[1]);
-            Console.WriteLine(cusps[2]);
+//            Console.WriteLine(cusps[1]);
+//            Console.WriteLine(cusps[2]);
 
             
             swe_houses_ex(someJulianDayNumber, EphemerisModes.Sidereal, 20, 78, 'B', cusps, ascendantAndOthers);
             Console.WriteLine(ascendantAndOthers[0]);
-            Console.WriteLine(cusps[1]);
-            Console.WriteLine(cusps[2]);
+//            Console.WriteLine(cusps[1]);
+//            Console.WriteLine(cusps[2]);
 
 
 //          Watch out for the House Flag G if you ever use it, kuch to bakar kar raha he ye mkc
 //          swe_houses_ex(someJulianDayNumber, EphemerisModes.Sidereal, 20, 78, 'G', cusps, ascendantAndOthers);
-//          Console.WriteLine(ascendantAndOthers[0]);
+          Console.WriteLine(ascendantAndOthers[0]);
             
             swe_houses_ex(someJulianDayNumber, EphemerisModes.Sidereal, 20, 78, 'A', cusps, ascendantAndOthers);
             Console.WriteLine(ascendantAndOthers[0]);
-            Console.WriteLine(cusps[1]);
-            Console.WriteLine(cusps[2]);
+//            Console.WriteLine(cusps[1]);
+//            Console.WriteLine(cusps[2]);
         }
 
         [Test]
@@ -371,11 +371,10 @@ namespace SwissEphemerisWrapperTest
             }
             Console.WriteLine("Julian Day Number from UTC: " + julianDayNumbersInEtAndUt[1]);
             Console.WriteLine(swe_sidtime(julianDayNumbersInEtAndUt[1]));
-            var computationFlag = EphemerisModes.Sidereal | EphemerisModes.SwissEphemeris
-                                                                            | EphemerisModes.Topocentric;
-            var longitude = ConvertDegreeAngleToDouble(80, 15, 0);
-            var latitude = ConvertDegreeAngleToDouble(13, 4, 0);
-            swe_set_topo(12.9667, 77.5667, 0);
+            var computationFlag = EphemerisModes.Sidereal | EphemerisModes.SwissEphemeris;
+//                                                                            | EphemerisModes.Topocentric;
+//            swe_set_topo(12.9667, 77.5667, 0);
+//            swe_set_topo(12.9667, 77.5667, 0);
             swe_set_sid_mode(SiderealFlag.Lahiri, 0, 0);
             foreach (var planet in Planets.AllPlanets)
             {
